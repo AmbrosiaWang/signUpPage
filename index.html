@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="reset1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+   <style>
+    html,body{
+        height: 100%;
+    }
+
+    body{
+        background-image: url(images/cafe.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .signin{
+        width: 600px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.633);
+        backdrop-filter: blur(2px);
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: 8px solid white;
+        box-shadow: 0 0 15px rgba(26, 25, 25, 0.776);
+    }
+
+    .form{font-family: 'Pacifico', cursive;
+    width: 400px;
+    }
+    .form h2{
+        text-align: center;
+        border-bottom: 2px solid yellow;
+        padding-bottom: 20px;
+        font-size: 40px;
+        
+    }
+    .group{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .group label{
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    .group input{
+        line-height: 2.5;
+        border-radius: 200px;
+        border: none;
+        
+
+    }
+
+    .group input:focus{
+        outline: none;
+    }
+
+    .group input::placeholder{
+        color: rgb(137, 133, 140);
+    }
+
+    .group-btn{
+        margin-top: 50px;
+        font-size: 0;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .btn{
+        font-size: 30px;
+        font-family: 'Quicksand', sans-serif;
+        border-radius: 5px;
+        background-color: rgb(75, 87, 125);
+        border: none;
+        width: 190px;
+        color: white;
+        padding: 5px 0;
+        background-image: linear-gradient(0deg,rgb(75, 87, 125),rgb(161, 174, 218));
+    }
+
+
+
+     
+ /* font-family: 'Pacifico', cursive;
+        font-family: 'Quicksand', sans-serif;
+        https://picsum.photos/200/300 */
+    </style>
+</head>
+
+<body>
+    <div class="signin">
+        <form class="form">
+            <h2>Sign Up</h2>
+
+            <div class="group">
+                <label for="email">Email</label>
+                <input type="text" id="email" class="user-email" placeholder="   aaaa@gmail.com">
+            </div>
+
+            <div class="group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="user-password" placeholder="   8 numbers">
+            </div>
+
+            <div class="group-btn">
+                <button class="btn">sign up</button>
+                <button class="btn">cancel</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
